@@ -26,19 +26,13 @@ export default class GodaddyMailProvider implements IMailProvider {
     });
   }
 
-  public async sendMail({
-    from,
-    to,
-    subject,
-    templateData,
-    attachments,
-  }: ISendMailDTO): Promise<void> {
+  public async sendMail({ from, to, subject, templateData, attachments }: ISendMailDTO): Promise<void> {
     const { email, name } = mailConfig.defaults.from;
 
     await this.client.sendMail({
       from: {
         name: from?.name || name,
-        address: "sakcripto@gmail.com",
+        address: "azimult@gmail.com",
       },
       to: {
         name: to.name,

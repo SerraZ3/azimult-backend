@@ -45,7 +45,7 @@ export default class GmailOAuth2MailProvider implements IGmailOAuth2MailProvider
     await this.client.sendMail({
       from: {
         name: from?.name || name,
-        address: "sakcripto@gmail.com",
+        address: "azimult@gmail.com",
       },
       to: {
         name: to.name,
