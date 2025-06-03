@@ -26,7 +26,8 @@ class Schedule {
 
   @Column()
   date: Date;
-
+  @Column()
+  attractionId: ObjectID;
   @Column()
   status: TStatusSchedule;
 

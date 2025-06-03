@@ -21,10 +21,10 @@ export default class ScheduleController {
     return response.status(200).json(data);
   }
   public async store(request: Request, response: Response): Promise<Response> {
-    const { date, quantity, observation } = request.body;
+    const { date, quantity, observation, attractionId } = request.body;
     const service = container.resolve(ScheduleCreateService);
 
-    const data = await service.execute({ date, quantity, observation });
+    const data = await service.execute({ date, quantity, observation, attractionId });
 
     return response.status(200).json(data);
   }
