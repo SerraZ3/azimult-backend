@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "lib": ["es2021", "dom"],
+    "sourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "./src",
+    "allowJs": true,
+    "paths": {
+      "@modules/*": ["modules/*"],
+      "@config/*": ["config/*"],
+      "@shared/*": ["shared/*"],
+      "@utils/*": ["shared/utils/*"]
+    },
+    "typeRoots": ["./src/types"],
+    "types": ["node"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

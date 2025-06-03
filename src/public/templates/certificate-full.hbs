@@ -1,0 +1,90 @@
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', 'Roboto', Helvetica, Arial;
+  }
+
+  div {
+    background-color: blue;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  img {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-text {
+    position: absolute;
+    font-size: 0.24in;
+    padding: 0 2.2in;
+    text-align: center;
+    white-space: pre-line;
+
+  }
+
+  .issue-text {
+    position: absolute;
+    top: 2in;
+    left: 0;
+    font-size: 0.18in;
+    padding: 0 1in;
+    white-space: pre-line;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    column-fill: auto;
+    height: 55%;
+    line-height: 0.25in;
+    white-space: pre-line;
+
+  }
+
+  .hash {
+    position: absolute;
+    bottom: 0.74in;
+
+  }
+
+  .hash-title {
+    position: absolute;
+    bottom: 0.96in;
+  }
+
+  .link {
+    position: absolute;
+    bottom: 0.55in;
+
+  }
+</style>
+
+<div>
+  <div class="page">
+    <img src="{{imgFront}}" alt="Image de fundo" />
+    <p class="main-text">{{defaultText}}</p>
+    <p class="hash-title">Código de validação do certificado</p>
+    <p class="hash">{{hash}}</p>
+    <a class="link" href="{{link}}">{{link}}</a>
+  </div>
+  <div class="page">
+    <img src="{{imgBack}}" alt="Image de fundo" />
+    <p class="issue-text">{{issueText}}</p>
+    <p class="hash-title">Código de validação do certificado</p>
+    <p class="hash">{{hash}}</p>
+    <a class="link" href="{{link}}">{{link}}</a>
+  </div>
+
+</div>

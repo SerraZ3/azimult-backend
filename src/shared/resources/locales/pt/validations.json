@@ -1,0 +1,77 @@
+{
+  "userData.cpfCnpj.required": "O campo Cpf/Cnpj é obrigatório",
+
+  "email.unique": "O E-mail já existe",
+  "email.required": "O E-mail é obrigatório",
+  "email.email": "O campo E-mail deve ser um e-mail",
+  "email.string": "Formato do E-mail inválido",
+
+  "password.required": "A Senha é obrigatória",
+  "password.min": "Senha muito curta",
+  "password.string": "Formato da senha inválido",
+
+  "currentPassword.required": "A Senha antiga é obrigatória",
+  "currentPassword.min": "Senha antiga muito curta",
+  "currentPassword.string": "Formato da senha antiga inválido",
+
+  "token.required": "O Token é obrigatório",
+  "token.string": "Formato do token inválido",
+
+  "emailConfirm.required": "O E-mail de confirmação é obrigatório",
+  "emailConfirm.same": "E-mails não coincidem",
+
+  "passwordConfirm.required": "A Senha de confirmação é obrigatória",
+  "passwordConfirm.same": "As senhas não coincidem",
+  "passwordConfirm.min": "Senha de confirmação muito curta",
+
+  "checkTerms.required": "O Termo de Uso é obrigatório",
+  "checkTerms.equals": "Você deve aceitar os termos para concluir o cadastro.",
+  "checkTerms.string": "Você deve aceitar os termos para concluir o cadastro.",
+
+  "name.required": "O Primeiro Nome é obrigatório",
+  "name.regex": "Formato do Primeiro Nome inválido",
+  "name.string": "Formato do Primeiro Nome inválido",
+  "name.max": "Primeiro Nome muito grande",
+
+  "lastname.required": "O Sobrenome é obrigatório",
+  "lastname.regex": "Formato do Sobrenome inválido",
+  "lastname.string": "Formato do Sobrenome inválido",
+
+  "fullname.required": "O Nome Completo é obrigatório",
+  "fullname.regex": "Formato do Nome Completo inválido",
+  "fullname.string": "Formato do Nome Completo inválido",
+  "fullname.max": "Nome Completo muito grande",
+
+  "birthdate.required": "A data de nascimento é obrigatória",
+  "birthdate.regex": "Formato da data de nascimento inválido",
+
+  "phone.required": "O Telefone é obrigatório",
+  "phone.regex": "Formato do Telefone inválido",
+  "phone.string": "Formato do Telefone inválido",
+
+  "cellphone.required": "O Celular é obrigatório",
+  "cellphone.regex": "Formato do Celular inválido",
+  "cellphone.string": "Formato do Celular inválido",
+
+  "value.required": "O Valor é obrigatório",
+  "value.number": "O Valor deve ser um número",
+  "value.above": "O Valor deve ser maior que zero",
+
+  "documentFile.required": "A foto do documento é obrigatória",
+  "documentFile.size": "A foto do documento precisa ser no máximo 1MB",
+  "documentFile.type": "Formato do documento inválido",
+
+  "documentType.required": "O tipo do documento é obrigatório",
+  "documentType.integer": "Formato inválido do tipo do documento",
+  "documentType.max": "Tamanho inválido do tipo do documento",
+  "documentType.min": "Tamanho inválido do tipo do documento",
+
+  "documentNumber.required": "O número do documento é obrigatório",
+  "documentNumber.string": "Formato de número de documento inválido",
+  "documentNumber.regex": "Formato de número de documento inválido",
+  "documentNumber.cpf": "CPF inválido",
+  "documentNumber.max": "Número do documento muito grande",
+
+  "subusers.required": "Sub usuários é obrigatório",
+  "subusers.integer": "Formato de sub usuários inválido"
+}

@@ -1,0 +1,50 @@
+<div style="text-align: center; padding: 5% 15% 5% 15%">
+
+  <h1 style="color: #01323a">Identificamos uma tentativa de acesso a sua conta!</h1>
+  <div style="font-size: 20px; color: #01323a;">
+    <p>
+      Olá
+      {{name}},
+    </p>
+    <p>
+      Para sua segurança bloqueamos o seu acesso por 30 minutos a nossa
+      plataforma, caso não tenha sido você a acessar por favor altere sua senha
+      clincando no botão abaixo
+    </p>
+    <p>
+      IP de acesso:
+      {{ip_access}}
+    </p>
+    <p>
+      Horário de acesso:
+      {{time_access}}
+    </p>
+  </div>
+  <a
+    style="
+      background-color: #85e5cf;
+      border-radius: 50px;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    "
+    href="{{url}}"
+  >
+    Solicitar nova senha
+  </a>
+
+</div>
+<p>
+  Att,
+</p>
+<p>
+  {{company_name}}
+</p>
