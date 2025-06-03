@@ -83,7 +83,7 @@ app.use(async (err: Error & { response: any }, req: Request, res: Response, _: N
   });
 });
 app.use(PREFIX_ROUTES || "/api/v1/", (req, res) => {
-  res.send("SakCripto - Router not found");
+  res.send("Azimult - Router not found");
 });
 
 const server = http.createServer(app);
