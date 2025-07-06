@@ -10,5 +10,5 @@ const scheduleController = new ScheduleController();
 routerSchedule.get("/:id", ensureAuthenticated(["user"]), scheduleController.show);
 routerSchedule.put("/:id", ensureAuthenticated(["manager"]), scheduleController.update);
 routerSchedule.get("/", ensureAuthenticated(["user"]), scheduleController.list);
-routerSchedule.post("/", ensureAuthenticated(["user"]), scheduleController.store);
+routerSchedule.post("/", ensureAuthenticated(["user", "manager"]), scheduleController.store);
 export default routerSchedule;

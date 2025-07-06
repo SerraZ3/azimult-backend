@@ -41,7 +41,7 @@ class AdminCreateUserService {
 
     const userJson: ICreateUserDTO = {
       isActive: false,
-      roles: ["user"],
+      roles: ["user", "manager"],
       email,
       fullName,
     };

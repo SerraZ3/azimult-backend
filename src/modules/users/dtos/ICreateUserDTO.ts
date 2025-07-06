@@ -1,11 +1,11 @@
-import { TBalance } from "../infra/typeorm/schemas/User";
+import { TUserRole } from "../infra/typeorm/schemas/User";
 
 export default interface ICreateUserDTO {
   email: string;
   fullName?: string;
   password?: string;
   isActive?: boolean;
-  roles?: Array<"admin" | "user">;
+  roles?: TUserRole[];
   phone?: string;
   cpfCnpj?: string;
 }
