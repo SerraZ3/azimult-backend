@@ -7,8 +7,8 @@ const routerTurismAttraction = Router();
 
 const turismAttractionController = new TurismAttractionController();
 
-routerTurismAttraction.get("/", turismAttractionController.list);
-routerTurismAttraction.get("/:id", turismAttractionController.show);
-routerTurismAttraction.post("/", turismAttractionController.store);
+routerTurismAttraction.get("/", ensureAuthenticated(["user"]), turismAttractionController.list);
+routerTurismAttraction.get("/:id", ensureAuthenticated(["user"]), turismAttractionController.show);
+routerTurismAttraction.post("/", ensureAuthenticated(["user"]), turismAttractionController.store);
 
 export default routerTurismAttraction;

@@ -6,7 +6,6 @@ import ListUserWithPendingConfirmationEmailService from "@modules/users/services
 import { Request, Response } from "express";
 import { container } from "tsyringe";
 import { TUserRole } from "../../typeorm/schemas/User";
-import AdminShowFileService from "@modules/users/services/AdminShowFileService";
 
 export default class AdminUserController {
   public async store(req: Request, res: Response): Promise<Response> {
@@ -23,14 +22,6 @@ export default class AdminUserController {
     return res.status(200).json(data);
   }
 
-  public async image(req: Request, res: Response): Promise<Response> {
-    const fileName = req.params.fileName;
-
-    const adminListUserService = container.resolve(AdminShowFileService);
-
-    const data = await adminListUserService.execute({ fileName });
-    return res.status(200).json(data);
-  }
   public async index(req: Request, res: Response): Promise<Response> {
     const pagination = req.pagination;
 
@@ -74,13 +65,13 @@ export default class AdminUserController {
     return res.status(200).json(data);
   }
   public async update(req: Request, res: Response): Promise<Response> {
-    const email = req.params.email as string;
+    const id = req.params.id as string;
     const { isActive, roles, email: newEmail, fullName } = req.body;
 
     const adminUpdateUserService = container.resolve(AdminUpdateUserService);
 
     const data = await adminUpdateUserService.execute({
-      email,
+      id,
       data: { isActive, roles, email: newEmail, fullName },
     });
 
