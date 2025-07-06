@@ -34,7 +34,7 @@ class ScheduleCreateService {
 
     //
     // let schedule: any = await this.schedulesRepository.findBy(where);
-    const schedule = await this.schedulesRepository.create({ date: new Date(date), quantity, observation, attractionId: _attractionId });
+    const schedule = await this.schedulesRepository.create({ date: new Date(date), quantity, observation, attractionId: _attractionId, status: "pending" });
 
     return {
       ...emitter.success("SUCCESS"),

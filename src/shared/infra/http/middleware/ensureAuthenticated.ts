@@ -2,7 +2,6 @@ import authConfig from "@config/auth";
 import { TUserRole } from "@modules/users/infra/typeorm/schemas/User";
 import CheckIfTokenIsValidService from "@modules/users/services/CheckIfTokenIsValidService";
 import GetRolesUserService from "@modules/users/services/GetRolesUserService";
-import TokenAccessGenerateHashService from "@modules/users/services/TokenAccessGenerateHashService";
 import AppError from "@shared/errors/AppError";
 import { NextFunction, Request, Response } from "express";
 import { verify } from "jsonwebtoken";

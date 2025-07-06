@@ -1,10 +1,6 @@
-import { TStatusTurismAttraction } from "../infra/typeorm/schemas/TurismAttraction";
-
 export default interface IUpdateTurismAttractionDTO {
-  turismAttraction?: Date;
+  title?: string;
 
-  status?: TStatusTurismAttraction;
-
-  observation?: string;
-  quantity?: number;
+  location?: string;
+  description?: string;
 }

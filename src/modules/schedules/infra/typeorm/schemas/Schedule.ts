@@ -1,22 +1,6 @@
 import { Exclude, plainToClass } from "class-transformer";
 import { Column, CreateDateColumn, DeleteDateColumn, Entity, ObjectID, ObjectIdColumn, UpdateDateColumn } from "typeorm";
 
-// export type TOrigin = "bank" | "broker" | "wallet";
-export type TScheduleType = "MAINTENANCE" | "FEES" | "COINS";
-
-export interface IMaintenance {
-  in: boolean;
-  out: boolean;
-  swap: boolean;
-  userTest: string[];
-}
-export interface IFees {
-  in: string;
-  out: string;
-  swap: string;
-  referral: string;
-}
-
 export type TStatusSchedule = "pending" | "approved" | "cancelled" | "finished";
 
 @Entity({ name: "schedules" })

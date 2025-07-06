@@ -1,9 +1,6 @@
 import { Exclude, plainToClass } from "class-transformer";
 import { Column, CreateDateColumn, DeleteDateColumn, Entity, ObjectID, ObjectIdColumn, UpdateDateColumn } from "typeorm";
 
-// export type TOrigin = "bank" | "broker" | "wallet";
-export type TTurismAttractionType = "MAINTENANCE" | "FEES" | "COINS";
-
 export type TStatusTurismAttraction = "active" | "banned" | "inactive";
 
 @Entity({ name: "turismAttractions" })
@@ -24,7 +21,7 @@ class TurismAttraction {
   likes: number;
 
   @Column()
-  comments: { userId: string; name: string; message: string }[];
+  comments: { userId: string; rate: number; message: string }[];
 
   @Column()
   status: TStatusTurismAttraction;
