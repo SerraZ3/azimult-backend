@@ -49,9 +49,6 @@ class ResetPasswordUserService {
     if (!user) {
       throw new AppError("USER_DO_NOT_EXIST", 400);
     }
-    if (!user.isActive && !userData) {
-      throw new AppError("INVALID_DATA", 400);
-    }
     if (userData) {
       let checkData = "";
       if (userData.cpfCnpj.length > 14) {

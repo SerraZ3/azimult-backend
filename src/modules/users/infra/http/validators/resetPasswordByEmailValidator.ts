@@ -2,11 +2,7 @@ import AppValidationError from "@shared/errors/AppValidationError";
 import { NextFunction, Request, Response } from "express";
 import { validateAll } from "indicative/validator";
 
-export default async function resetPasswordByEmailValidator(
-  request: Request,
-  response: Response,
-  next: NextFunction
-): Promise<void> {
+export default async function resetPasswordByEmailValidator(request: Request, response: Response, next: NextFunction): Promise<void> {
   try {
     let rules = {
       password: "required|string",

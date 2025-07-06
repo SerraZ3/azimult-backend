@@ -1,16 +1,16 @@
 import { Router } from "express";
 import AdminUserController from "../controllers/AdminUserController";
-import ConfirmUserRegistrationController from "../controllers/ConfirmUserRegistrationController";
+import ResetPasswordByEmailController from "../controllers/ResetPasswordByEmailController";
 import adminCreateUserValidator from "../validators/adminCreateUserValidator";
-import confirmEmailUserValidator from "../validators/confirmEmailUserValidator";
+import resetPasswordByEmailValidator from "../validators/resetPasswordByEmailValidator";
 
 const userRouter = Router();
 
-const confirmUserRegistrationController = new ConfirmUserRegistrationController();
+const resetPasswordByEmailController = new ResetPasswordByEmailController();
 
 const adminUserController = new AdminUserController();
 
-userRouter.post("/registry-confirm", confirmEmailUserValidator, confirmUserRegistrationController.create);
+userRouter.post("/registry-confirm", resetPasswordByEmailValidator, resetPasswordByEmailController.create);
 
 userRouter.post("/sign-up", adminCreateUserValidator, adminUserController.store);
 // userRouter.get("/validate-chat-id", checkChatId);

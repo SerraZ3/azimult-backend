@@ -10,13 +10,7 @@ import AdminShowFileService from "@modules/users/services/AdminShowFileService";
 
 export default class AdminUserController {
   public async store(req: Request, res: Response): Promise<Response> {
-    const {
-      email,
-      password,
-      fullName,
-      referralCode,
-      // roles
-    } = req.body;
+    const { email, password, fullName } = req.body;
 
     const adminCreateUserService = container.resolve(AdminCreateUserService);
 
@@ -24,8 +18,6 @@ export default class AdminUserController {
       email,
       password,
       fullName,
-      referralCode,
-      // roles,
     });
 
     return res.status(200).json(data);
